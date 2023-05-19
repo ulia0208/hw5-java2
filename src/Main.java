@@ -78,6 +78,20 @@ public class Main {
 
        Map<Integer,String>mapName = createMap(listNames);
 
+        TreeMap<Integer, String> tree_map = new TreeMap<>(Comparator.reverseOrder());
+
+        tree_map.putAll(mapName);
+        int it=0;
+        for(Map.Entry e : tree_map.entrySet()){
+            System.out.println(e.getKey()+" "+ e.getValue());
+            it++;
+        }
+
+
+
+
+
+
 //        Map<List<Integer>,String>mapName = new TreeMap<>();
 //        for (int i = 0; i < mapName.size(); i++) {
 //            int count = 0;
